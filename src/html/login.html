@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/libs/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="dialog">
+        <h1>使用 Smartisan ID 登录官网</h1>
+        <div class="form">
+            <form action="../server/login.php">
+                <!-- 地区 -->
+                <div class="input eara">
+                    <i></i>
+                    <span class="cr">国家和地区</span>
+                    <span class="country">中国</span>
+                </div>
+                <!-- 手机号 -->
+                <div class="input phone-number">
+                    <i></i>
+                    <span class="qianzhui">+86</span>
+                    <input type="email" placeholder="手机号" id="inputEmail">
+                </div>
+                <!-- 密码 -->
+                <div class="input psw">
+                    <i></i>
+                    <input type="password" placeholder="密码" id="inputPassword">
+                </div>
+
+                <!-- 登录方式 -->
+                <div class="login-style">
+                    <div class="auto-login">
+
+                        <span>自动登录</span>
+                    </div>
+                    <div class="forget-psw">
+                        <span>短信验证码登录</span>
+                        <strong></strong>
+                        <span>忘记密码？</span>
+                    </div>
+                </div>
+
+                <!-- 登录按钮 -->
+                <div class="btn-wrapper">
+                    登录
+                </div>
+
+                <!-- 其他方式登录 -->
+                <div class="other-style">
+                    <span>其他账号登录 ：</span>
+                    <ul class="icons-app">
+                        <li class="weixin"></li>
+                        <li class="weibo"></li>
+                        <li class="qq"></li>
+                        <li class="alipay"></li>
+                    </ul>
+                    <span class="other-more">注册></span>
+                </div>
+
+                <!-- 登录协议 -->
+                <div class="login-agree">
+                    <span>登录代表你已同意 
+                        <a href="">用户协议</a>和
+                        <a href="">隐私政策</a>
+                    </span>
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- 尾部 -->
+        <div class="login-footer">
+            <h2>Copyright©2020smartisan.com 版权所有
+            </h2>
+            <span>京 ICP 备 18020659 号 - 2</span>
+        </div>
+    </div>
+    <script src="./js/utils.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/cookie.js"></script>
+    <script src="./js/login.js"></script>
+
+</body>
+
+</html>

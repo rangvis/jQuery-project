@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/libs/reset.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/5.4.5/css/swiper.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    @@include('./template/_header.html')
+
+    <!-- 轮播图 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#"><img src="https://resource.smartisan.com/resource/f59ff7e0afa3ccd6cdebdb477d61a441.png?x-oss-process=image/resize,w_1220/format,webp/quality,Q_95" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="https://resource.smartisan.com/resource/8a9362d774e9d6a4010623f8f1360f7c.jpg?x-oss-process=image/resize,w_915/format,webp/quality,Q_95" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="https://resource.smartisan.com/resource/c88dda5ffd608d47aa958c9f4b673fe9.png?x-oss-process=image/resize,w_1220/format,webp/quality,Q_95" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="https://resource.smartisan.com/resource/b2c0aec8fefeb299257847afc6aa2b85.png?x-oss-process=image/resize,w_915/format,webp/quality,Q_95" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="https://resource.smartisan.com/resource/57912eeb5926b1587e58449f5e7052eb.png?x-oss-process=image/resize,w_915/format,webp/quality,Q_95" alt=""></a>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 广告位 -->
+    <section class="sectionNav">
+        <div class="section-nav"><img src="https://resource.smartisan.com/resource/eca4f286fde41cebb778dc4f8bf055df.jpg?x-oss-process=image/resize,w_600/format,webp" alt=""></div>
+        <div class="section-nav"><img src="https://resource.smartisan.com/resource/1023fe9691eaf03abbfd261b36df4985.png?x-oss-process=image/resize,w_600/format,webp" alt=""></div>
+        <div class="section-nav"><img src="https://resource.smartisan.com/resource/33ea4bfa05068e0741b7278fec9da8a6.jpg?x-oss-process=image/resize,w_600/format,webp" alt=""></div>
+        <div class="section-nav"><img src="https://resource.smartisan.com/resource/fdc4370d1ce14a67fadc35d74209ac0f.jpg?x-oss-process=image/resize,w_600/format,webp" alt=""></div>
+    </section>
+
+    <!-- 热门商品 -->
+    <div class="hot-good guanggao">
+        <section class="hot-goods">
+            <div class="hot-head">
+                <h3 class="fl">热门商品</h3>
+                <div class="right-operation ">
+                    <button class="left-btn" disabled></button>
+                    <button class="right-btn"></button>
+                </div>
+            </div>
+            <div class="home-hot-wrap">
+                <main class="home-hot"></main>
+            </div>
+        </section>
+    </div>
+
+    <div class="home-floor">
+
+    </div>
+
+    <!-- 尾部 -->
+    @@include('./template/_footer.html')
+    <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/5.4.5/js/swiper.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

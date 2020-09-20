@@ -1,0 +1,263 @@
+body {
+    background: url(../images/login-bg.png);
+    height: 800px;
+}
+
+.dialog {
+    width: 450px;
+    border-radius: 10px;
+    height: 643px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-225px, -371px);
+    margin-top: 92px;
+    box-shadow: 0 9px 30px -6px rgba(0, 0, 0, .2), 0 18px 20px -10px rgba(0, 0, 0, .04), 0 18px 20px -10px rgba(0, 0, 0, .04), 0 10px 20px -10px rgba(0, 0, 0, .04);
+    background: url(../images/logo1.png) no-repeat center 26px, url(../images/dialog-gray-bg_42c40b3eb6.png) #fff bottom repeat-x;
+    h1 {
+        text-align: center;
+        font-size: 20px;
+        color: #333;
+        font-weight: 400;
+        margin-top: 177px;
+    }
+    .form {
+        width: 450px;
+        height: 401px;
+        margin-top: 45px;
+        padding: 0 40px 22px;
+        box-sizing: border-box;
+        form {
+            width: 100%;
+            height: 100%;
+            .input {
+                width: 370px;
+                height: 48px;
+                box-shadow: 0 3px 5px -4px rgba(0, 0, 0, .4) inset, -1px 0 3px -2px rgba(0, 0, 0, .1) inset;
+                border: #ccc solid 1px;
+                border-radius: 6px;
+                margin: 17px 0;
+                position: relative;
+                i {
+                    display: inline-block;
+                    width: 46px;
+                    height: 46px;
+                    border-right: solid 1px #ccc;
+                    border-radius: 6px 0 0 6px;
+                }
+                input {
+                    height: 68%;
+                    border: none;
+                    position: relative;
+                    top: -17px;
+                    width: 151px;
+                    // padding: 12px 101px 12px 0;
+                    font-size: 16px;
+                    color: #333;
+                    // background-color: rgba(255,255,255, 0);
+                    &:focus {
+                        outline: 0;
+                    }
+                }
+            }
+            /*地区选择*/
+            .eara {
+                i {
+                    background: url(../images/login-icon.png) -192px 0, linear-gradient(#f8f8f8, #fafafa);
+                }
+                .cr {
+                    height: 100%;
+                    display: inline-block;
+                    font-size: 16px;
+                    color: #666666;
+                    position: absolute;
+                    line-height: 46px;
+                    padding-left: 10px;
+                }
+                .country {
+                    font-size: 15px;
+                    display: inline-block;
+                    position: absolute;
+                    right: 10px;
+                    height: 100%;
+                    top: 0px;
+                    color: #666666;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    max-width: 76px;
+                    background: url(../images/ic_change.png) no-repeat right center;
+                    text-align: center;
+                    box-sizing: border-box;
+                    padding-top: 17px;
+                    padding-right: 20px;
+                    cursor: pointer;
+                }
+            }
+            /*手机号*/
+            .phone-number {
+                i {
+                    background: url(../images/login-icon.png) -3px 0, linear-gradient(#f8f8f8, #fafafa);
+                }
+                .qianzhui {
+                    display: inline-block;
+                    width: 55px;
+                    height: 100%;
+                    position: relative;
+                    left: 5px;
+                    top: -15px;
+                    font-size: 18px;
+                    color: #666666;
+                }
+            }
+            /*密码*/
+            .psw {
+                i {
+                    background: url(../images/login-icon.png) -51px 0, linear-gradient(#f8f8f8, #fafafa);
+                }
+                input {
+                    padding-left: 12px;
+                }
+            }
+            /*登录方式*/
+            .login-style {
+                position: relative;
+                top: -3px;
+                .auto-login {
+                    background: url(../images/checkbox.png) no-repeat;
+                    display: inline-block;
+                    height: 20px;
+                    padding-left: 20px;
+                    line-height: 17px;
+                    color: #999999;
+                }
+                .forget-psw {
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    span:last-of-type {
+                        padding-left: 8px;
+                    }
+                    strong {
+                        display: inline-block;
+                        width: 1px;
+                        height: 11px;
+                        background-color: #e5e5e5;
+                        margin-left: 9px;
+                        margin-top: -2px;
+                        vertical-align: middle;
+                    }
+                    span {
+                        color: #5079d9;
+                        cursor: pointer;
+                    }
+                }
+            }
+            /*登录按钮*/
+            .btn-wrapper {
+                width: 370px;
+                height: 48px;
+                margin: 0 auto;
+                margin-top: 20px;
+                background: linear-gradient(#6383c6, #4262af);
+                text-align: center;
+                line-height: 48px;
+                color: #fff;
+                border-radius: 6px;
+                font-size: 18px;
+                // opacity: 0.4;
+            }
+            /*其他方式登录*/
+            .other-style {
+                margin-top: 24px;
+                position: relative;
+                span {
+                    font-size: 12px;
+                    color: #999999;
+                }
+                .icons-app {
+                    display: inline-block;
+                    position: relative;
+                    top: 6px;
+                    li {
+                        width: 20px;
+                        height: 17px;
+                        display: inline-block;
+                        background: url(../images/icons_app.png);
+                        margin-right: 10px;
+                        cursor: pointer;
+                        &:hover {
+                            background: url(../images/icons-hover.png);
+                        }
+                    }
+                    .weixin {
+                        background-position: 0 0;
+                        &:hover {
+                            background-position: 0 0;
+                        }
+                    }
+                    .weibo {
+                        background-position: -32px 0;
+                        &:hover {
+                            background-position: -32px 0;
+                        }
+                    }
+                    .qq {
+                        background-position: -61px 0;
+                        &:hover {
+                            background-position: -61px 0;
+                        }
+                    }
+                    .alipay {
+                        background-position: -89px 0;
+                        &:hover {
+                            background-position: -90px 0;
+                        }
+                    }
+                }
+                .other-more {
+                    position: absolute;
+                    top: 8px;
+                    right: 0;
+                    cursor: pointer;
+                    &:hover {
+                        color: #5079d9;
+                    }
+                }
+            }
+        }
+        /*登录协议*/
+        .login-agree {
+            width: 370px;
+            border-top: 1px solid #dadada;
+            margin-top: 20px;
+            padding-top: 5px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #999999;
+            a {
+                color: #5079d9;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.login-footer {
+    position: absolute;
+    bottom: -70px;
+    left: 10%;
+    text-align: center;
+    width: 370px;
+    // margin-bottom: 100px;
+    h2 {
+        height: 15px;
+        line-height: 15px;
+        color: #757575;
+        margin-bottom: 10px;
+    }
+    span {
+        color: #5079d9;
+        cursor: pointer;
+    }
+}

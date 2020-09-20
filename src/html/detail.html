@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/libs/reset.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/list_page.css">
+    <link rel="stylesheet" href="./css/detail_page.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/5.4.5/css/swiper.css" rel="stylesheet">
+</head>
+
+<body>
+    @@include('./template/_header.html')
+
+    <!-- 右边固定栏 -->
+    <div class="fixed-bar">
+        <figure class="fir-fixed">
+            <span class="icon kefu"></span>
+            <p class="link-s">联系客服</p>
+
+        </figure>
+        <figure class="sec-fixed">
+            <span class="icon up-arrow"></span>
+            <p class="ret-top">回到顶部</p>
+        </figure>
+    </div>
+
+
+    <!-- 商品信息 -->
+    <section class="goods-info">
+        <!-- <div class="gallery">
+            
+            <ul class="small-img choice-btn">
+                <li><img src="https://resource.smartisan.com/resource/f55641e23f35f6dd82226b6c4a043f00.jpg?x-oss-process=image/resize,w_80/format,webp"
+                        alt=""></li>
+                <li><img src="https://resource.smartisan.com/resource/715e1f316a0518eea8a23c3e3edb8c06.jpg?x-oss-process=image/resize,w_80/format,webp"
+                        alt=""></li>
+                <li><img src="https://resource.smartisan.com/resource/5bd8115a15a9c894c6dbf21a8dade57a.jpg?x-oss-process=image/resize,w_80/format,webp"
+                        alt=""></li>
+                <li><img src="https://resource.smartisan.com/resource/965910d0341edd44ddd7a5b113f55055.jpg?x-oss-process=image/resize,w_80/format,webp"
+                        alt=""></li>
+
+            </ul>
+
+            <ul class="big-img small">
+
+                <li>
+                    <img src="https://resource.smartisan.com/resource/f55641e23f35f6dd82226b6c4a043f00.jpg" alt="">
+                    <div class="wrap"></div>   
+                </li>
+                
+                
+                <span class="grayBox"></span>
+            </ul>
+
+            <div class="fangdajing big">
+                <img src="https://resource.smartisan.com/resource/f55641e23f35f6dd82226b6c4a043f00.jpg" alt="">
+            </div>
+        </div>
+
+
+
+
+        <div class="item-information">
+            <article class="item-title">
+                <h1>坚果三脚架自拍杆</h1>
+                <h2>两种模式，随时随地都能拍得开心
+                </h2>
+                <figure class="item-price">
+                    <span class="now-price">
+                        <em>¥</em>
+                        <i>89.00</i>
+
+                    </span>
+                    <span class="original-price">
+                        原价:￥99.00
+
+                    </span>
+                </figure>
+            </article>
+            
+            <article class="sale-active">
+                <span>促销活动</span>
+                <div class="active-info">
+                    <figure class="tag tag-yellow">直降</figure>
+                    <i>自营配件 限时直降</i>
+                </div>
+            </article>
+
+            <article class="color-sel">
+                <span>颜色选择</span>
+                <ul class="color-list">
+                    <li><img _ngcontent-c7="" alt=""
+                            src="https://resource.smartisan.com/resource/5b4da8bcedbb8e18a0ad60e982013a81.jpg?x-oss-process=image/resize,w_52">
+                    </li>
+                </ul>
+            </article>
+
+            <article class="num-sel">
+                <span>数量选择</span>
+                <div class="num-btn">
+                    <div class="jian-btn"></div>
+                    <i class="num">1</i>
+                    <div class="add-btn"></div>
+                </div>
+            </article>
+
+            <article class="baoyou">
+                <span>服务说明</span>
+                <i>* 满 99 包邮</i>
+            </article>
+        </div> -->
+
+    </section>
+
+    <!-- 产品信息 -->
+    <div class="product-info">
+        <div class="product-title">
+            产品信息
+        </div>
+        <div class="product">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <!-- 加入购物车 -->
+    <div class="product-fix-bar">
+        <div class="fix-bar-wrapper">
+            <h2 class="choiced">您已选择了</h2>
+            <div class="choiced-good">
+                <h2><i>坚果三脚架自拍杆</i> ×
+                    <span>1</span> </h2>
+                <h3>黑色</h3>
+            </div>
+
+            <!-- 加入购物车按钮 -->
+            <div class="cart-btn add-cart">
+                加入购物车
+            </div>
+
+            <!-- 现在购买 -->
+            <div class="cart-btn now-buy">现在购买</div>
+
+            <!-- 折扣价格 -->
+            <div class="discount-price">
+                <div class="bar-price">
+                    <i>￥</i>
+                    <span>99.00</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    @@include('./template/_footer.html')
+    <script src="./js/jquery.js"></script>
+    <script src="./js/Magnifier.js"></script>
+    <script src="./js/detail.js"></script>
+</body>
+
+</html>
